@@ -10,18 +10,26 @@ Include player statistics found on the NFL website.
 Use the variable types learned so far to create the player properties.
 */
 
-public class playerClass {
+public class playerClass extends NFLPlayer{
 
-	//public static void main(String[] args) {
-	public void playerList(){
-	System.out.println("Players list will appear hear");
-		
-	String [] Bears = {"Sam Acho, Mike Adams, Adrian Amos, Matt Barkley"}; {
-	String name = "Sam Acho";
-	byte jerseyNumber = 49;
-	String position = "OLB";
-	
+	public playerClass(){
+				
 	}
+	
+	public static void playerClass() {
+	System.out.println("Players list will appear hear");
+	NFLPlayer drewBrees = new playerClass();
+	NFLPlayer kirkCousins = new playerClass();
+	
+	NFLPlayer [] playerList = new NFLPlayer [20];
+	
+	playerList[0] = drewBrees;
+	playerList[1] = kirkCousins;
+	
+	System.out.println("Your favorite player is " + playerList[0]);
+	
+	
+	
 	}	
 
 }
